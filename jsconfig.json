@@ -15,7 +15,7 @@
     },
     "moduleResolution": "node",
     "strict": true,
-    "checkJs": true
+    "checkJs": false
   },
   "exclude": ["node_modules", ".next"]
 }
