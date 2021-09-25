@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "preserve",
+    "lib": ["dom", "es2017"],
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./*"],
+      "~/components/*": ["components/*"],
+      "~/libs/*": ["libs/*"],
+      "~/styles/*": ["styles/*"],
+      "~/data/*": ["data/*"],
+      "~/utils/*": ["utils/*"]
+    },
+    "moduleResolution": "node",
+    "strict": true,
+    "checkJs": true
+  },
+  "exclude": ["node_modules", ".next"]
+}

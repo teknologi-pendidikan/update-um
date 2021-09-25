@@ -1,0 +1,22 @@
+{
+  "name": "NextJS Server",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": { "VARIANT": "16" }
+  },
+
+  "settings": {},
+  "extensions": [
+    "visualstudioexptteam.vscodeintellicode",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "wix.vscode-import-cost",
+    "davidanson.vscode-markdownlint",
+    "csstools.postcss",
+    "bradlc.vscode-tailwindcss",
+    "redhat.vscode-yaml"
+  ],
+  "forwardPorts": [3000],
+  "postCreateCommand": "yarn install",
+  "remoteUser": "node"
+}

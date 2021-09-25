@@ -1,0 +1,49 @@
+{
+  "name": "nextjs-project-init",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "postinstall": "husky install",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "format": "prettier --ignore-path .gitignore --write \"./**/*.{js,jsx,json,html}\"",
+    "lint": "eslint --ignore-path .gitignore \"**/*.{js,jsx}\" \"*.config.js\"",
+    "lint:fix": "eslint --ignore-path .gitignore --fix \"**/*.{js,jsx}\" \"*.config.js\""
+  },
+  "dependencies": {
+    "next": "11.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/eslint-plugin": "^7.14.5",
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "cross-env": "^7.0.3",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "^7.32.0",
+    "eslint-config-kentcdodds": "^19.2.0",
+    "eslint-config-next": "11.1.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.25.1",
+    "husky": "^7.0.2",
+    "prettier": "^2.4.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,yml,yaml}": "eslint --cache --fix",
+    "*.{js,jsx,ts,tsx,yml,yaml,json}": "prettier --write"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
