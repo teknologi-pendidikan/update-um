@@ -4,26 +4,26 @@ import Pagelayout from "components/page-layout";
 const menuItems = [
   {
     title: "Berita Universitas",
-    description: "Agregasi Berita Pada Situs Universitas Negeri Malang",
-    link: "/universitas",
+    description: "Berita Universitas Negeri Malang",
+    link: "/universitas/um",
   },
   {
-    title: "Berita Organisasi Mahasiswa",
-    description: "Agregasi Berita Organisasi Mahasiswa",
-    link: "/ormawa",
+    title: "PTIK UM",
+    description: "Artikel Web Pusat Teknologi Informasi Komunikasi UM",
+    link: "/universitas/ptik",
   },
   {
-    title: "Berita Fakultas",
-    description: "Agregasi Berita berita pada situs Fakultas",
-    link: "/fakultas",
+    title: "Kemahasiswaaan",
+    description: "Artikel Web  Kemahasiswaan UM",
+    link: "/universitas/kemahasiswaan",
   },
 ];
 
 const seo = {
-  title: "Universitas Negeri Malang News Feeder",
+  title: "Berita UM",
   description:
     "Agregator konten dan artikel yang dipublikasikan di situs Universitas Negeri Malang. Dibuat untuk proyek pribadi serta independen",
-  pageTitle: "Universitas Negeri Malang News Feeder",
+  pageTitle: "Berita dan Artikel UM & UPT",
   pageDescription:
     "Agregator konten dan artikel yang dipublikasikan di situs Universitas Negeri Malang. Dibuat untuk proyek pribadi serta independen",
 };

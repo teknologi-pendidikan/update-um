@@ -1,7 +1,5 @@
-import Header from "components/header";
-import Footer from "components/footer";
+import PageLayout from "components/page-layout";
 import CardInformasi from "components/card-components";
-import NavbarBottom from "components/navbar-bottom";
 
 const { parse } = require("rss-to-json");
 
@@ -21,24 +19,27 @@ export default function Index({ newsFromUM }) {
       <CardInformasi key={i} title={newsTitle} published={newsPublishedDate} link={newsLink} />
     );
   }
+
+  const seo = {
+    title: "Fakultas Ilmu Pendidikan",
+    description: "Fakultas Ilmu Pendidikan Universitas Negeri Malang",
+    pageTitle: "Fakultas Ilmu Pendidikan",
+    pageDescription: "Fakultas Ilmu Pendidikan Universitas Negeri Malang",
+  };
+
   return (
-    <>
-      <NavbarBottom />
-      <Header />
-      <div id="page-title" className="px-8 pt-4 pb-4">
-        <h2 className="text-3xl font-bold">Berita dari FIP UM</h2>
-        <p className="mt-4">Agregasi Berita FIP UM</p>
-        <p>
-          Sumber Feed: <em className="text-blue-800">http://fip.um.ac.id</em>
-        </p>
-      </div>
+    <PageLayout
+      title={seo.title}
+      description={seo.description}
+      pageTitle={seo.pageTitle}
+      pageDescription={seo.pageDescription}
+    >
       <main>
         <section id="um-news" className="py-4 px-8">
           {UMNews}
         </section>
       </main>
-      <Footer />
-    </>
+    </PageLayout>
   );
 }
 
