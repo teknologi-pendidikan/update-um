@@ -8,11 +8,6 @@ const menuItems = [
     link: "/fakultas/fip",
   },
   {
-    title: "FMIPA UM",
-    description: "Fakultas Matematika dan Ilmu Pengetahuan Alam",
-    link: "/fakultas/fmipa",
-  },
-  {
     title: "FT UM",
     description: "FakultasTeknik",
     link: "/fakultas/ft",
@@ -26,11 +21,6 @@ const menuItems = [
     title: "FS UM",
     description: "Fakultas Sastra",
     link: "/fakultas/fs",
-  },
-  {
-    title: "FIK UM",
-    description: "Fakultas Ilmu Keolahragaan",
-    link: "/fakultas/fik",
   },
 ];
 

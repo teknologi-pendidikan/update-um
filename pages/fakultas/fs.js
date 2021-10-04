@@ -32,7 +32,7 @@ export default function Index({ newsFromUM }) {
       pageTitle={seo.title}
       pageDescription={seo.description}
     >
-      <main>
+      <main className="md:mx-24">
         <section id="um-news" className="py-4 px-8">
           {UMNews}
         </section>
@@ -42,7 +42,9 @@ export default function Index({ newsFromUM }) {
 }
 
 export async function getStaticProps() {
-  const dataFeedUM = await parse("https://rss-rengga.vercel.app/blogs/wordpress/fs.um.ac.id/http");
+  const dataFeedUM = await parse(
+    "https://rss-rengga.vercel.app/blogs/wordpress/sastra.um.ac.id/http"
+  );
   const newsFromUM = JSON.stringify(dataFeedUM);
   return {
     props: {

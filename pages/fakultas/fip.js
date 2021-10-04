@@ -34,7 +34,7 @@ export default function Index({ newsFromUM }) {
       pageTitle={seo.pageTitle}
       pageDescription={seo.pageDescription}
     >
-      <main>
+      <main className="md:mx-24">
         <section id="um-news" className="py-4 px-8">
           {UMNews}
         </section>
