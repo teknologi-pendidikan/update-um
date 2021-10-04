@@ -1,5 +1,7 @@
 # NextJS Project Template
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7b077410-ec7f-4501-b0e5-7c4bad6b052a/deploy-status)](https://app.netlify.com/sites/newsfeed-um/deploys)
+
 This is an example setup of Next.js. It add some basic tooling:
 
 - Basic eslint and prettiers with `eslint-config-kentcdodds`
