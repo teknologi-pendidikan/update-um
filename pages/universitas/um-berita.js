@@ -26,13 +26,13 @@ export default function Index({ newsFromUM }) {
       <NavbarBottom />
       <Header />
       <div id="page-title" className="px-8 pt-4 pb-4">
-        <h2 className="text-3xl font-bold">PTIK UM</h2>
-        <p className="mt-4">Agregasi Artikel PTIK UM</p>
+        <h2 className="text-3xl font-bold">Berita dari UM</h2>
+        <p className="mt-4">Agregasi Berita UM</p>
         <p>
-          Sumber Feed: <em className="text-blue-800">https://ptik.ac.id</em>
+          Sumber Feed: <em className="text-blue-800">https://um.ac.id</em>
         </p>
       </div>
-      <main className="md:mx-24">
+      <main>
         <section id="um-news" className="py-4 px-8">
           {UMNews}
         </section>
@@ -43,7 +43,7 @@ export default function Index({ newsFromUM }) {
 }
 
 export async function getStaticProps() {
-  const dataFeedUM = await parse("https://ptik.um.ac.id/feed");
+  const dataFeedUM = await parse("https://um.ac.id/kategori/berita/feed");
   const newsFromUM = JSON.stringify(dataFeedUM);
   return {
     props: {

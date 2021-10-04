@@ -3,9 +3,29 @@ import Pagelayout from "components/page-layout";
 
 const menuItems = [
   {
-    title: "Berita Universitas",
+    title: "Berita Universitas - Umum",
     description: "Berita Universitas Negeri Malang",
     link: "/universitas/um",
+  },
+  {
+    title: "Berita Universitas - Berita",
+    description: "Berita Universitas Negeri Malang",
+    link: "/universitas/um-berita",
+  },
+  {
+    title: "Berita Universitas - Pengumuman",
+    description: "Berita Universitas Negeri Malang",
+    link: "/universitas/um-pengumuman",
+  },
+  {
+    title: "Berita Universitas - Rilis",
+    description: "Berita Universitas Negeri Malang",
+    link: "/universitas/um-rilis",
+  },
+  {
+    title: "Berita Universitas - Info Akademik",
+    description: "Berita Universitas Negeri Malang",
+    link: "/universitas/um-akademik",
   },
   {
     title: "PTIK UM",

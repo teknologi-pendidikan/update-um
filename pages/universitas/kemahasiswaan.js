@@ -32,7 +32,7 @@ export default function Index({ newsFromUM }) {
           Sumber Feed: <em className="text-blue-800">http://kemahasiswaan.um.ac.id</em>
         </p>
       </div>
-      <main>
+      <main className="md:mx-24">
         <section id="um-news" className="py-4 px-8">
           {UMNews}
         </section>

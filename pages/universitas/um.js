@@ -43,7 +43,7 @@ export default function Index({ newsFromUM }) {
 }
 
 export async function getStaticProps() {
-  const dataFeedUM = await parse("https://um.ac.id/kategori/berita/feed");
+  const dataFeedUM = await parse("https://um.ac.id/feed");
   const newsFromUM = JSON.stringify(dataFeedUM);
   return {
     props: {
